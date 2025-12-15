@@ -1,0 +1,6 @@
+LastNAndFirstN = input ("Your last name, first name?")
+Age = input ("How old are you?")
+PhoneNum = input  ("Your phone number?")
+print ("Your first name, last name" , LastNAndFirstN)
+print ("Your age" , Age)
+print ("Your phone number" , PhoneNum)
