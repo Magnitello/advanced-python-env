@@ -1,0 +1,7 @@
+A = input ()
+C = 0
+for i in range(len(A) - 4):
+    s = A[i:i+5]
+    if s == '>>-->' or s == '<--<<':
+        C += 1
+print (C)
