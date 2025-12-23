@@ -1,0 +1,14 @@
+A = input()
+B = input()
+n = len(A)
+m = len(B)
+S = set()
+B = B + B 
+for i in range (m):
+    S.add(B[i:i+m])
+C = 0
+for i in range(n - m + 1):
+    Sub = A[i:i+m]
+    if Sub in S:
+        C += 1
+print (C)
