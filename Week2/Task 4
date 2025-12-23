@@ -1,0 +1,9 @@
+Fl = input().split()
+n = int(Fl[0])
+m = int(Fl[1])
+a = set()
+text = input()
+for i in range (n - m + 1):
+    word = text[i:i+m]
+    a.add(word)
+print (len(a))
