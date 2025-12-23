@@ -1,0 +1,29 @@
+list = input().split()
+N = {}
+for n in list:
+    if n in N:
+        N[n] += 1
+    else:
+        N[n] = 1
+print("Purchase frequency:")
+for i in N:
+    print(i + ":", N[i])
+print()
+mv = 0
+for n in N:
+    if N[n] > mv:
+        mv = N[n]
+        m = n
+print("Most popular item:" , m)
+print()
+A = ""
+for i in N:
+    if N[i] == 1:
+        A += i + " "
+print("Purchased once:" , A)
+print() 
+print("Sorted by frequency:")
+for i in range(mv, 0, -1):
+    for x in N:
+        if N[x] == i:
+            print(x, i)
