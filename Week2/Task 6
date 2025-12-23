@@ -1,0 +1,14 @@
+def all_eq(L):
+    if not L:
+        return[]
+    Len = 0
+    for i in L:
+        if len(i) > Len:
+            Len = len(i)
+    N = [0]
+    for i in L:
+        S = i + "_" * (Len - len(i))
+        N.append(i)
+    return N
+I = input().split()
+print(all_eq(I))
