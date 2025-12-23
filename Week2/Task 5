@@ -1,0 +1,13 @@
+N = input()
+if N:
+    N = int(N)
+    Let = 'ABCEHKMOPTXY'
+    Dig = '0123456789'
+    for _ in range(N):
+        p = input()
+        if len(p) == 6 and \
+           p[0] in Let and p[1] in Dig and p[2] in Dig and \
+           p[3] in Dig and p[4] in Let and p[5] in Let:
+            print("Yes")
+        else:
+            print("No")
