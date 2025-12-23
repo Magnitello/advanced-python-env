@@ -1,0 +1,26 @@
+A = input()
+a = A[0]
+b = A[2]
+Operation = A[1]
+Ans = A[4]
+if a == "x":
+    b = int(b)
+    Ans = int(Ans)
+    if Operation == "+":
+        print(Ans - b)
+    elif Operation == "-":
+        print(Ans + b)
+elif b == 'x':
+    a = int(a)
+    Ans = int(Ans)
+    if Operation == "+":
+        print(Ans - a)
+    elif Operation == "-":
+        print(a + Ans)
+elif Ans == "x" :
+    a = int(a)
+    b = int(b)
+    if Operation == "+":
+        print(a + b)
+    elif Operation == "-":
+        print(a - b)
