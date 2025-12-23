@@ -1,0 +1,6 @@
+S1 = input()
+S2 = input()
+if sorted(S1) == sorted(S2):
+    print("Yes")
+else:
+    print("No")
