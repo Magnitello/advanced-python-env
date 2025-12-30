@@ -1,0 +1,29 @@
+# 4.1      
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+GCD = gcd(a * d, b * c)
+print((a * d // GCD),"/", (b * c // GCD))
+
+# 4.2
+def inside(x, y, a, b, R):
+    distance_sq = (x - a)**2 + (y - b)**2
+    if distance_sq < R**2:
+        return 1 
+    return 0    
+a = float(input("x_a: "))
+b = float(input("y_b: "))
+r = float(input("R: "))
+p = input("P(p1 p2): ").split()
+f = input("F(f1 f2): ").split()
+l = input("L(l1 l2): ").split()
+c = 0
+c += inside(float(p[0]), float(p[1]), a, b, r)
+c += inside(float(f[0]), float(f[1]), a, b, r)
+c += inside(float(l[0]), float(l[1]), a, b, r)
+print(c)
