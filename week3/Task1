@@ -1,0 +1,35 @@
+#1.1
+choice = input("Circle , Rectangle ,True n-gon: ")
+if choice == "Circle":
+    r = float(input())
+    S = 3.14 * (r * r)
+    print("S:", S)
+elif choice == "Rectangle":
+    a = float(input())
+    b = float(input())
+    S = a * b
+    print("S:", S)
+elif choice == "True n-gon":
+    n = int(input("n: "))
+    a = float(input("a: "))
+    x = 3.14 / n
+    tan_x = x + (x**3)/3 + (2 * x**5)/15
+    S = (n * (a**2)) / (4 * tan_x)
+    print("S:", S)
+
+#1.2
+arr1 = input().split()
+arr2 = input().split()
+arr3 = input().split()
+all = [arr1 , arr2 , arr3]
+c = 1
+for arr in all:
+    s = 0
+    С = 0
+    for n in arr:
+        s = s + int(n)
+        С += 1
+    if С > 0:
+        A = s / С
+        print("SUM: ",s) 
+        print("AVG: ",A)
