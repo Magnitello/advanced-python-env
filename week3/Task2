@@ -1,0 +1,16 @@
+#2.1
+def triangle(a):
+    s = (1.732 / 4) * (a * a)
+    return s
+S = float(input("a: "))
+r = 6 * triangle(S)
+print("S: ", r)
+
+#2.2
+def Area(a, b):
+    return a * b
+for i in range(3):
+    a = float(input())
+    b = float(input())
+    S = Area(a, b)
+    print ("S:", S)
