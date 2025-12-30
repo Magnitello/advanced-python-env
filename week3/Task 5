@@ -1,0 +1,20 @@
+#5.1
+def gcd(a, b):
+    a, b = abs(a), abs(b)
+    while b:
+        a, b = b, a % b
+    return a
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+GCD = gcd(a * d - c * b, b * d)
+print((a * d - c * b // GCD), "/" ,(b * d // GCD))
+
+#5.2  
+n = int(input())
+print(n, end=" ")
+for i in range(1, n + 1):
+    if n % i == 0:
+        print(i, end=" ")
+print() 
