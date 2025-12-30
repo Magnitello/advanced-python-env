@@ -1,0 +1,23 @@
+#3.1
+print("1 triangle")
+a1 = float(input())
+b1 = float(input())
+h1 = (a1**2 + b1**2)**0.5
+print("2 triangle")
+a2 = float(input())
+b2 = float(input())
+h2 = (a2**2 + b2**2)**0.5
+if h1 > h2:
+    print("1 > 2")
+elif h2 > h1:
+    print("2 > 1")
+else:
+    print("1 = 2")
+
+#3.2
+text = input().split()
+print( end=" ")
+for word in text:
+    sorted= "".join(sorted(word.lower()))
+    print(sorted, end=" ")
+print() 
