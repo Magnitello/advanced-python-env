@@ -1,0 +1,19 @@
+class Person:
+    def __init__(self, name):
+        self._name = name  
+    def info(self):
+        return f"Person name: {self._name}"
+class Student(Person):
+    def __init__(self, name, student_id):
+        super().__init__(name)
+        self.student_id = student_id
+    def info(self): 
+        return f"Student name: {self._name}, ID: {self.student_id}"
+
+Pn = input()
+person = Person(Pn)
+Sn = input()
+Si = input()
+student = Student(Sn, Si)
+print(person.info())
+print(student.info())
