@@ -1,0 +1,26 @@
+class Employee:
+    def __init__(self, name, salary):
+        self._salary = salary
+        self.name = name
+    def get_salary(self):
+        return self._salary
+    def get_role(self):
+        return "Employee"
+class Manager(Employee):
+    def __init__(self, name, salary, bonus):
+        super().__init__(name, salary)
+        self.bonus = bonus
+    def get_role(self):
+        return "Manager"
+    def get_bonus(self):
+        return self.bonus
+
+def info(employees):
+    for emp in employees:
+        print(f"Name: {emp.name}, Role: {emp.get_role()}, Salary: {emp.get_salary()}")
+en = input("name E: ")
+es = float(input(f"Salary {en}: "))
+mn = input("name M: ")
+ms = float(input(f"Salary {mn}: "))
+mb = float(input(f"Bonus {mn}: "))
+info([Employee(en, es), Manager(mn, ms, mb)])
