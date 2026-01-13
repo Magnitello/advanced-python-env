@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Arystan",
+    "age": 19,
+    "grades": [90, 90, 88]
+  },
+  {
+    "name": "Ers",
+    "age": 19,
+    "grades": [90, 82, 80]
+  },
+  {
+    "name": "Ryslan",
+    "age": 18,
+    "grades": [85, 89, 85]
+  },
+  {
+    "name": "Gintama",
+    "age": 30,
+    "grades": [50, 70, 66]
+  }
+]
