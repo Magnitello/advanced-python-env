@@ -1,0 +1,19 @@
+import string
+with open("text.txt", "r", encoding="utf-8") as file:
+    lines = file.readlines()
+lc = len(lines)
+wc = 0
+wf = {}
+
+for line in lines:
+    line = line.lower().translate(str.maketrans("", "", string.punctuation))
+    ws = line.split()
+    wc += len(ws)
+    for w in ws:
+        wf[w] = wf.get(w, 0) + 1
+with open("analysis.txt", "w", encoding="utf-8") as res:
+    res.write(f"Total lines: {lc}\n")
+    res.write(f"Total words: {wc}\n")
+    res.write("Word frequency:\n")
+    for w, freq in wf.items():
+        res.write(f"{w}: {freq}\n")
